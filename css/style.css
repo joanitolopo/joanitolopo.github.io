@@ -378,11 +378,46 @@ footer {
 
 /* ── MOBILE ── */
 @media (max-width: 560px) {
-    .hero { flex-direction: column; gap: 20px; }
-    .hero-photo-placeholder { width: 80px; height: 80px; font-size: 22px; }
-    .hero-text h1 { font-size: 22px; }
-    .nav-name { display: none; }
-    .exp-item { flex-direction: column; gap: 4px; }
-    .exp-left { width: auto; }
-    .project-grid { grid-template-columns: 1fr; }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-photo,
+    .hero-photo-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 30px;
+    }
+
+    .hero-bio {
+        max-width: 100%;
+    }
+
+    .hero-badges {
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+    .nav-name {
+        display: none;
+    }
+
+    .exp-item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .exp-left {
+        width: auto;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
