@@ -1,32 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joanito Agili Lopo</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joanito Agili Lopo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="assets/profile.jpeg" alt="Joanito Agili Lopo" style="width: 200px; border-radius: 50%; margin: 0 auto; display: block; margin-bottom: 20px;">
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#about">Joanito Agili Lopo</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="assets/Joanito_Lopo_Curriculum_Vitae.pdf" class="resume-link" target="_blank">Resume ↗</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT / HERO -->
+<section id="about">
+  <div class="container">
+    <div class="hero">
+      <!-- Replace src with your actual photo path, or remove this block to use initials -->
+      <!-- <div class="hero-photo-placeholder" aria-hidden="true">JL</div> -->
+      <img class="hero-photo" src="assets/profile.jpeg" alt="Joanito Agili Lopo">
+      <div class="hero-text">
         <h1>Joanito Agili Lopo</h1>
-        <p>Master's Student in Artificial Intelligence UGM</p>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="publications.html">Publications</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="experiences.html">Experiences</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>Hello! I’m Joanito, a Master’s student at Universitas Gadjah Mada specializing in Artificial Intelligence and Natural Language Processing (NLP). My work focuses on multilingual and low-resource NLP, machine learning, and innovative AI solutions. Explore my portfolio to learn more about my projects, publications, and experiences!</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Joanito Agili Lopo | <a href="mailto:amalopo99@gmail.com">Email</a> | <a href="https://github.com/joanitolopo">GitHub</a></p>
-    </footer>
+        <p class="hero-role">Master's student · Universitas Gadjah Mada · NLP Researcher</p>
+        <p class="hero-bio">
+          I work on multilingual and efficient large language models, with a focus on understanding
+          and controlling language representations at inference time. My research asks how we can
+          disentangle language and semantic information inside multilingual LLMs to enable robust
+          cross-lingual transfer — especially for low-resource languages, including Indonesian local languages.
+        </p>
+        <div class="hero-badges">
+          <span class="badge accent">Multilingual NLP</span>
+          <span class="badge accent">Low-Resource Languages</span>
+          <span class="badge accent">Representation Learning</span>
+          <span class="badge">PyTorch · HuggingFace</span>
+          <span class="badge">GPA 4.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH INTERESTS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Research</p>
+    <div class="research-block">
+      <p>
+        My primary interest is in how internal representations in multilingual LLMs encode
+        language versus semantic information, and how this structure can be leveraged for
+        efficient adaptation without large-scale retraining.
+      </p>
+      <p>
+        Recent work suggests language-specific and language-neutral information are partially
+        separable in a model's latent space. I aim to formalise disentanglement as a structured
+        objective — minimising mutual information between components while enforcing
+        orthogonality — and to build adaptive language control mechanisms at inference time.
+      </p>
+      <div class="research-dirs">
+        <div class="research-dir">
+          Representation Analysis
+          <span>Probing & similarity across layers and model scales</span>
+        </div>
+        <div class="research-dir">
+          Latent Disentanglement
+          <span>Separating language identity from semantic content</span>
+        </div>
+        <div class="research-dir">
+          Inference-Time Control
+          <span>Adaptive language steering without retraining</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Education</p>
+    <div class="edu-item">
+      <div class="edu-year">2025</div>
+      <div class="edu-body">
+        <div class="edu-school">Universitas Gadjah Mada</div>
+        <div class="edu-degree">Master of Computer Science — Artificial Intelligence &amp; NLP</div>
+        <div class="edu-detail">GPA 4.0 · Thesis: Multilingual and Low-Resource NLP</div>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-year">2023</div>
+      <div class="edu-body">
+        <div class="edu-school">Universitas Kristen Satya Wacana</div>
+        <div class="edu-degree">Bachelor of Information System — Machine Learning</div>
+        <div class="edu-detail">GPA 3.95 · Thesis: Data Imbalanced</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Publications</p>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2026</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.48550/arXiv.2603.02676" target="_blank">
+            Normalization and Deterministic Parsing for Formal Reasoning in LLMs
+          </a>
+        </div>
+        <div class="pub-venue">Muhamad et al. · SemEval-2026 Task 11 · ITLC system paper</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2025</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.18653/v1/2025.mrl-main.30" target="_blank">
+            Language Surgery in Multilingual Large Language Models
+          </a>
+        </div>
+        <div class="pub-venue">Lopo et al. · MRL 2025 (5th Workshop on Multilingual Representation Learning)</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2025</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.1109/ICoAIT67446.2025.11309005" target="_blank">
+            Reconstructing Autoencoder-like MLP Architecture for Feature-Preserving Pooling in CNNs
+          </a>
+        </div>
+        <div class="pub-venue">Lopo et al. · ICoAIT 2025 · <strong style="color:#ba7517;font-weight:500">Best Paper Award</strong></div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2024</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://aclanthology.org/2024.paclic-1.56/" target="_blank">
+            CIKMar: A Dual-Encoder Approach to Prompt-Based Reranking in Educational Dialogue Systems
+          </a>
+        </div>
+        <div class="pub-venue">Lopo et al. · PACLIC 2024 (38th Pacific Asia Conference on Language, Information and Computation)</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2024</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.18653/v1/2024.emnlp-main.296" target="_blank">
+            SEACrowd: A Multilingual Multimodal Data Hub and Benchmark Suite for Southeast Asian Languages
+          </a>
+        </div>
+        <div class="pub-venue">Lovenia et al. · EMNLP 2024</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2024</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.48550/arXiv.2404.01009" target="_blank">
+            Constructing and Expanding Low-Resource and Underrepresented Parallel Datasets for Indonesian Local Languages
+          </a>
+        </div>
+        <div class="pub-venue">Lopo &amp; Tanone · arXiv preprint</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2023</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.20473/jisebi.9.2.195-213" target="_blank">
+            Enhancing Multi-Output Time Series Forecasting with Encoder-Decoder Networks
+          </a>
+        </div>
+        <div class="pub-venue">Hartomo, Lopo &amp; Purnomo · JISEBI, 9(2), 195–213</div>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-year-badge">2023</div>
+      <div>
+        <div class="pub-title">
+          <a href="https://doi.org/10.26555/jiteki.v9i2.25929" target="_blank">
+            Evaluating Sampling Techniques for Healthcare Insurance Fraud Detection in Imbalanced Dataset
+          </a>
+        </div>
+        <div class="pub-venue">Lopo &amp; Hartomo · JITEKI, 9(2), 223–238</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Projects</p>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-card-title">
+          <a href="https://bhinneka-app.streamlit.app/" target="_blank">Bhinneka Korpus ↗</a>
+        </div>
+        <div class="project-card-desc">
+          Parallel corpus for Indonesian regional languages with linguistic annotations, 
+          statistical MT models, and a public translation playground.
+        </div>
+        <span class="project-tag">NLP · Low-resource · 2023</span>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-title">T5 Abstractive Summarisation</div>
+        <div class="project-card-desc">
+          Fine-tuned T5 on the Liputan6 Indonesian news dataset for concise 
+          abstractive summarisation of long-form articles.
+        </div>
+        <span class="project-tag">NLP · PyTorch · 2022</span>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-title">Sentiment Analysis</div>
+        <div class="project-card-desc">
+          Benchmarked four ML algorithms (LR, Logistic, Naïve Bayes, SVM) on 
+          Instagram comment sentiment classification.
+        </div>
+        <span class="project-tag">ML · Scikit-learn · 2023</span>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-title">i3gis CLI Tool</div>
+        <div class="project-card-desc">
+          Command-line interface in Go integrated into the i3gis DevSecOps platform, 
+          developed with Agile practices.
+        </div>
+        <span class="project-tag">Go · DevSecOps · 2022</span>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-title">Customer Segmentation</div>
+        <div class="project-card-desc">
+          Clustering-based segmentation to analyse customer behaviour patterns in 
+          a marketing campaign dataset.
+        </div>
+        <span class="project-tag">ML · Clustering · 2021</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Experience</p>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <div class="exp-period">Sep – Dec 2024</div>
+        <div class="exp-org">UGM, Yogyakarta</div>
+      </div>
+      <div>
+        <div class="exp-role">Computer Lab Assistant</div>
+        <div class="exp-desc">Supported students with C++ programming, debugging, and project development; maintained lab systems.</div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <div class="exp-period">Jan – Jun 2023</div>
+        <div class="exp-org">UKSW, Salatiga</div>
+      </div>
+      <div>
+        <div class="exp-role">Research Intern · Directorate of Research &amp; Community Service</div>
+        <div class="exp-desc">Designed ML pipelines for Parkinson's detection, fraud detection, multi-output time series forecasting, and landslide prediction.</div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <div class="exp-period">Jul 2022 – Jan 2023</div>
+        <div class="exp-org">PT Inovasi Informatika Indonesia</div>
+      </div>
+      <div>
+        <div class="exp-role">Software Developer Intern</div>
+        <div class="exp-desc">Built a Go CLI application for the i3gis DevSecOps platform; led development and production cycles using Agile.</div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-left">
+        <div class="exp-period">Jul – Aug 2021</div>
+        <div class="exp-org">Kopernik, Soe NTT</div>
+      </div>
+      <div>
+        <div class="exp-role">Enumerator</div>
+        <div class="exp-desc">Conducted interviews with mothers and led focus group discussions on child stunting for a public health research programme.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label">Awards &amp; Honors</p>
+    <ul class="award-list">
+      <li>
+        <span class="award-year">2025</span>
+        Best Paper Award · 1st International Conference on Artificial Intelligence Technology
+      </li>
+      <li>
+        <span class="award-year">2021</span>
+        Top 16 Finalist · Orbit Habibie Techfest
+      </li>
+      <li>
+        <span class="award-year">2021</span>
+        Adaro Scholarship Awardee (2021 – 2023)
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="border-bottom:none;">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:amalopo99@gmail.com">
+        <span class="contact-icon">✉</span>
+        amalopo99@gmail.com
+      </a>
+      <a class="contact-item" href="https://github.com/joanitolopo" target="_blank">
+        <span class="contact-icon">⌥</span>
+        github.com/joanitolopo
+      </a>
+      <a class="contact-item" href="assets/Joanito_Lopo_Curriculum_Vitae.pdf" target="_blank">
+        <span class="contact-icon">↓</span>
+        Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Joanito Agili Lopo · Yogyakarta, Indonesia
+</footer>
+
 </body>
 </html>
